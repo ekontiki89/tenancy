@@ -129,13 +129,13 @@ return [
          * A good use case is when you have set "tenant" as the default
          * database connection.
          */
-        'early-identification' => env('TENANCY_EARLY_IDENTIFICATION', true),
+        'early-identification' => env('TENANCY_EARLY_IDENTIFICATION', false),
 
         /**
          * Abort application execution in case no hostname was identified. This will throw a
          * 404 not found in case the tenant hostname was not resolved.
          */
-        'abort-without-identified-hostname' => false,
+        'abort-without-identified-hostname' => true,
 
         /**
          * Time to cache hostnames in minutes. Set to false to disable.
